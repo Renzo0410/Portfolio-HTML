@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Portfolio</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+            rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!-- Navigator -->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" title="btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link"
+                                href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#sobremi">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section 01: Index -->
+        <section id="inicio" class="section-index bg-light">
+            <div
+                class="container-index container row d-flex align-items-center justify-content-center flex-column flex-md-row">
+                <!-- Container of Text -->
+                <div
+                    class="container-text01 col-12 col-md-7 text-center mb-4 mb-md-0">
+                    <div
+                        class="d-flex align-items-center justify-content-center flex-column flex-sm-row gap-3">
+                        <!-- Avatar en móviles -->
+                        <img src="./img/Me/Me01.jpg"
+                            alt="Avatar"
+                            class="avatar-img d-block d-md-none rounded-circle">
+                        <div>
+                            <h1 class="display-6 mb-1">¡Hola, soy Renzo
+                                Gabriel!</h1>
+                            <h5 class="mb-2">Desarrollador Web</h5>
+                        </div>
+                    </div>
+
+                    <a href="./cv/RenzoGabrielCV.pdf" download
+                        class="btn btn-outline-info"
+                        role="button">
+                        <i class="bi bi-download"></i> Descargar CV
+                    </a>
+                    <hr>
+                    <h5 class="text-center mb-4">Skills</h5>
+
+                    <div id="skillsCarousel" class="carousel slide"
+                        data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+
+                            <!-- Slide 1: Tecnology -->
+                            <div class="carousel-item active">
+                                <div class="text-center">
+                                    <h6>Tecnologías</h6>
+                                    <div
+                                        class="d-flex justify-content-center gap-4 flex-wrap mt-3">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/html96.png"
+                                            alt="HTML5">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/css96.png"
+                                            alt="CSS">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2: Lenguajes de programación -->
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <h6>Lenguajes de programación</h6>
+                                    <div
+                                        class="d-flex justify-content-center gap-4 flex-wrap mt-3">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/js96.png"
+                                            alt="JavaScript">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/php96.png"
+                                            alt="PHP">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/python96.png"
+                                            alt="Python">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/java96.png"
+                                            alt="Java">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3: Librerías y Frameworks -->
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <h6>Librerías y Frameworks</h6>
+                                    <div
+                                        class="d-flex justify-content-center gap-4 flex-wrap mt-3">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/bootstrap96.png"
+                                            alt="Bootstrap">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/react96.png"
+                                            alt="React JS">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4: Bases de datos -->
+                            <div class="carousel-item">
+                                <div class="text-center">
+                                    <h6>Bases de datos</h6>
+                                    <div
+                                        class="d-flex justify-content-center gap-4 flex-wrap mt-3">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/mysql96.png"
+                                            alt="MySQL">
+                                        <img class="img-Skills img-fluid"
+                                            src="./img/Skills/sql96.png"
+                                            alt="SQL">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Controls -->
+                        <button class="carousel-control-prev" type="button"
+                            title="btn"
+                            data-bs-target="#skillsCarousel"
+                            data-bs-slide="prev">
+                            <span
+                                class="carousel-control-prev-icon01 carousel-control-prev-icon"
+                                aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            title="btn"
+                            data-bs-target="#skillsCarousel"
+                            data-bs-slide="next">
+                            <span
+                                class="carousel-control-next-icon01 carousel-control-next-icon"
+                                aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <hr>
+                    <div class="container-contact01 d-flex gap-3">
+                        <!-- Gmail -->
+                        <a href="mailto:renzo.gabrielch@gmail.com"
+                            class="btn btn-outline-danger">
+                            <i class="bi bi-envelope-fill"></i> Gmail
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/renzogabriel04/"
+                            target="blank" class="btn btn-outline-primary">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/Renzo0410" target="blank"
+                            class="btn btn-outline-light">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Container of image -->
+                <div class="col-12 col-md-5 container-img01 text-center">
+                    <img src="./img/Me/Me01.jpg" alt="Foto de inicio"
+                        class="img-aboutMe01 img-fluid mt-3 d-none d-md-block">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 02: About Me -->
+        <section id="sobremi" class="section-aboutme bg-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Imagen sobre mí -->
+                    <div
+                        class="col-lg-4 col-12 text-center mb-4 mb-lg-0 position-relative">
+                        <div class="position-relative d-inline-block">
+                            <img src="./img/Me/Me02.jpg" alt="Foto sobre mí"
+                                class="img-fluid rounded-circle shadow-lg img-aboutMe02">
+
+                            <!-- Nube con HTML -->
+                            <img src="./img/Skills/html96.png" alt="HTML"
+                                class="tech-cloud01 tech-cloud">
+                            <img src="./img/Skills/css96.png" alt="CSS"
+                                class="tech-cloud02 tech-cloud">
+                            <img src="./img/Skills/js96.png" alt="JS"
+                                class="tech-cloud03 tech-cloud">
+                        </div>
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="col-lg-8 col-12">
+                        <h2
+                            class="mb-3 fs-2 fs-md-1 text-center text-lg-start">Sobre
+                            mí</h2>
+                        <p
+                            class="fs-6 fs-md-5 fs-lg-4 text-justify">Desarrollador
+                            web apasionado con amplio conocimientos en
+                            tecnologías, leguajes de programación y bases de
+                            datos. Estoy en busca de mi primera experiencia
+                            laboral en el sector de la tecnología y cuento con
+                            muchas ganas de seguir aprendiendo sobre este
+                            entorno. Me considero una persona muy comprometida
+                            en generalmente.
+                            Sé que mis virtudes y esfuerzo hablan por mí y por
+                            eso aseguro eficiencia, creatividad, calidad y
+                            seguridad en mis proyectos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 03: Projects -->
+        <section id="proyectos" class="section-proyects bg-light py-5">
+            <div class="text-center">
+                <h2 class="mb-5">Proyectos</h2>
+                <div class="card-p01 card mx-auto">
+                    <img src="./img/Projects/R&GSalud-img01.png"
+                        class="card-img-top" alt="Project01">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">R&G SALUD</h5>
+                        <p class="card-text">
+                            Página web desarrollada durante el aprendizaje en
+                            MasterD.
+                            Centrada específicamente para hospitales, doctores
+                            y/o pacientes.
+                        </p>
+
+                        <!-- Tecnologías empleadas -->
+                        <div
+                            class="mb-3 d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-secondary">PHP</span>
+                            <span class="badge bg-primary">CSS</span>
+                            <span class="badge bg-bootstrap">Bootstrap</span>
+                            <span class="badge bg-warning">JavaScript</span>
+                            <span class="badge bg-secondary">phpMyAdmin</span>
+                        </div>
+
+                        <!-- Botón GitHub -->
+                        <a
+                            href="https://github.com/Renzo0410/PHP/tree/main/00-Hospital_R%26G_Salud"
+                            target="blank" class="btn btn-outline-dark mb-2">
+                            <i class="bi bi-github me-1"></i> Ver en GitHub
+                        </a><br>
+
+                        <!-- Botón Modal -->
+                        <button type="button" class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalProyecto1">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal con Carrusel -->
+        <div class="modal fade" id="modalProyecto1" tabindex="-1"
+            aria-labelledby="modalProyecto1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold"
+                            id="modalProyecto1Label">R&G SALUD</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Carrusel -->
+                        <div id="carouselProyecto1" class="carousel slide"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Img 01: Inicio de la página -->
+                                <div
+                                    class="carousel-modal-projects carousel-item active">
+                                    <img src="./img/Projects/R&GSalud-img01.png"
+                                        class="d-block w-100" alt="Imagen 08">
+                                    <div
+                                        class="carousel-caption d-md-block bg-dark rounded">
+                                        <p>Página de inicio del sitio web R&G
+                                            Salud.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Img 02: Sección de noticias -->
+                                <div
+                                    class="carousel-modal-projects carousel-item">
+                                    <img src="./img/Projects/R&GSalud-img02.png"
+                                        class="d-block w-100" alt="Imagen 02">
+                                    <div
+                                        class="carousel-caption d-md-block bg-dark rounded">
+                                        <p>Sección de noticias para estar al
+                                            tanto de las novedades en los
+                                            centros.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Img 03: Apartado de Login -->
+                                <div
+                                    class="carousel-modal-projects carousel-item">
+                                    <img src="./img/Projects/R&GSalud-img03.png"
+                                        class="d-block w-100" alt="Imagen 03">
+                                    <div
+                                        class="carousel-caption d-md-block bg-dark rounded">
+                                        <p>Capacidad de poder logearse como
+                                            usuario y/o administrador.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Img 04: Sección de registro -->
+                                <div
+                                    class="carousel-modal-projects carousel-item">
+                                    <img src="./img/Projects/R&GSalud-img04.png"
+                                        class="d-block w-100" alt="Imagen 04">
+                                    <div
+                                        class="carousel-caption d-md-block bg-dark rounded">
+                                        <p>Facilidad de registro.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Img 05: Vistas de ediciones -->
+                                <div
+                                    class="carousel-modal-projects carousel-item">
+                                    <img
+                                        src="./img/Projects/R&GSalud-img05-06-07.png"
+                                        class="d-block w-100" alt="Imagen 02">
+                                    <div
+                                        class="carousel-caption d-md-block bg-dark rounded">
+                                        <p>Control sencillo para modificar
+                                            citas, agregar nuevas noticias y
+                                            usuarios.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Controles -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselProyecto1"
+                                data-bs-slide="prev">
+                                <span
+                                    class="carousel-control-prev-icon02 carousel-control-prev-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselProyecto1"
+                                data-bs-slide="next">
+                                <span
+                                    class="carousel-control-next-icon02 carousel-control-next-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 04: Contact -->
+        <section id="contacto" class="section-contact bg-white py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">¡Contáctame!</h2>
+
+                <!-- Botones de contacto -->
+                <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/34624366325" target="blank"
+                        class="btn btn-success">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+
+                    <!-- Gmail -->
+                    <a href="mailto:renzo.gabrielch@gmail.com"
+                        class="btn btn-danger">
+                        <i class="bi bi-envelope-fill"></i> Gmail
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/renzogabriel04/"
+                        target="blank" class="btn btn-primary">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/Renzo0410" target="blank"
+                        class="btn btn-light">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </div>
+
+                <!-- Créditos -->
+                <div class="text-muted small">
+                    <p class="text-credits">Desarrollado con
+                        <span class="text-orange">HTML</span>,
+                        <span class="text-info">CSS</span>,
+                        <span class="text-purple">Bootstrap</span>,
+                        <span class="text-warning">JavaScript</span>.
+                    </p>
+                    <p class="text-credits">&copy; 2025 Renzo Gabriel</p>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/navigator.js"></script>
+    </body>
+</html>
