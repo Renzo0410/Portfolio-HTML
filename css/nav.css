@@ -10,8 +10,4 @@
         background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
         border-bottom: 1px #6f6f6f solid;
     }
-
-    .navbar {
-        --bs-navbar-padding-y: 0 !important;
-    }
 }
